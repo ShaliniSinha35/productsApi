@@ -3,10 +3,9 @@ const cors = require("cors");
 const app = express();
 const path=require("path")
 app.use(cors());
-
 const products=require("./product.json")
-
 const port = process.env.PORT || 5000;
+app.use(express.static('public'));
 
 
 // products
