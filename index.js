@@ -4,7 +4,7 @@ const app = express();
 const path=require("path")
 app.use(cors());
 
-const products=require("./products.json")
+const products=require("./product.json")
 
 const port = process.env.PORT || 5000;
 
