@@ -1,30 +1,26 @@
 [
     {
-      "id": "5",
-      "product_code": "FOM00001",
-      "product_old_code": null,
-      "sku_code": "628200001",
-      "hsn_code": "00001",
-      "product_name": "Tomato ( Local Tomato)",
-      "weight": "1",
-      "unit": "MU0001",
-      "price": "20",
-      "brand": "B0003",
-      "discount": "2",
-      "discount_type": "Flat",
-      "offer_price": "18",
-      "available_qty": "",
-      "stock_status": "Out of Stock",
-      "menu_des_1": "&lt;p&gt;Tomato is a nutrient-dense superfood that offers benefits to a range of bodily systems. Its nutritional content supports healthful skin, weight loss, and heart health. Tomatoes are the major dietary source of the antioxidant lycopene, which has been linked to many health benefits, including reduced risk of heart disease and cancer.&lt;/p&gt;\r\n\r\n&lt;p&gt;It Carries:&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\t&lt;li&gt;32 calories (kcal)&lt;/li&gt;\r\n\t&lt;li&gt;170.14 g of water&lt;/li&gt;\r\n\t&lt;li&gt;1.58 g of protein&lt;/li&gt;\r\n\t&lt;li&gt;2.2 g of fiber&lt;/li&gt;\r\n\t&lt;li&gt;5.8 g of carbohydrate&lt;/li&gt;\r\n\t&lt;li&gt;0 g cholesterol&lt;/li&gt;\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n\r\n&lt;p&gt;# Variable Size &amp;amp; Color policy&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;br /&gt;\r\n*Please note that the item(s) in this product may vary slightly in size and color.&lt;/p&gt;",
-      "category": "C0001",
-      "sub_category": "SC0004",
-      "sub_sub_category": "CSS0002",
-      "images": ["/images/product/33f9607c495d82d5fa00c42f2f6dd31f.jpg", "/images/product/44f16805bafbe2643da257a2d2b0e9a3.png"],
-      "is_variant": "No",
-      "cart_limit": "4",
-      "product_name_hindi": "टमाटर ",
-      "tag_name": "tomato, tamato, tamater",
-     
-    }
-      
+        "id": "5",
+        "product_code": "FOM00001",
+        "product_name": "Tomato ( Local Tomato)",
+        "weight": "1",
+        "unit": "MU0001",
+        "price": "20",
+        "brand": "B0003",
+        "discount": "2",
+        "offer_price": "18",
+        "menu_des_1": "&lt;p&gt;Tomato is a nutrient-dense superfood that offers benefits to a range of bodily systems. Its nutritional content supports healthful skin, weight loss, and heart health. Tomatoes are the major dietary source of the antioxidant lycopene, which has been linked to many health benefits, including reduced risk of heart disease and cancer.&lt;/p&gt;\r\n\r\n&lt;p&gt;It Carries:&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\t&lt;li&gt;32 calories (kcal)&lt;/li&gt;\r\n\t&lt;li&gt;170.14 g of water&lt;/li&gt;\r\n\t&lt;li&gt;1.58 g of protein&lt;/li&gt;\r\n\t&lt;li&gt;2.2 g of fiber&lt;/li&gt;\r\n\t&lt;li&gt;5.8 g of carbohydrate&lt;/li&gt;\r\n\t&lt;li&gt;0 g cholesterol&lt;/li&gt;\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n\r\n&lt;p&gt;# Variable Size &amp;amp; Color policy&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;br /&gt;\r\n*Please note that the item(s) in this product may vary slightly in size and color.&lt;/p&gt;",
+        "category": "C0001",
+        "sub_category": "SC0004",
+        "sub_sub_category": "CSS0002",
+        "images": ["/images/product/33f9607c495d82d5fa00c42f2f6dd31f.jpg", "/images/product/44f16805bafbe2643da257a2d2b0e9a3.png"],
+        "is_combo": "No",
+        "delivery_option": "Normal",
+        "is_variant": "No",
+        "cart_limit": "4",
+        "product_name_hindi": "टमाटर ",
+        "tag_name": "tomato, tamato, tamater"
+       
+        
+      }
 ]
