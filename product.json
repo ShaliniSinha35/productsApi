@@ -13,7 +13,7 @@
         "category": "C0001",
         "sub_category": "SC0004",
         "sub_sub_category": "CSS0002",
-        "images": ["/images/product/33f9607c495d82d5fa00c42f2f6dd31f.jpg", "/images/product/44f16805bafbe2643da257a2d2b0e9a3.png"],
+        "images": "/images/product/33f9607c495d82d5fa00c42f2f6dd31f.jpg",
         "is_combo": "No",
         "delivery_option": "Normal",
         "is_variant": "No",
