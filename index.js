@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 app.use(express.static('public'));
 
 // products
-app.use('/public/images/product', express.static(path.join(__dirname,'public/images/product')));
+app.use('/images/product', express.static(path.resolve(__dirname,'images/product')));
 app.get('/', (req, res) => {
   const newData = products.map(item =>{
     return {
