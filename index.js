@@ -11,7 +11,9 @@ app.use(express.static('public'));
 
 
 // products
-app.use('/public/images/product', express.static('public/images/product'));
+// app.use('/public/images/product', express.static('public/images/product'));
+app.use('/images', express.static(path.join(__dirname, 'images')));
+
 app.get('/', (req, res) => {
   const newData = products.map(item =>{
     return {
@@ -43,6 +45,8 @@ app.get('/logo', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
+
+// http://products-api-pearl.vercel.app/images/product/tomato.jpg
 
 
 
