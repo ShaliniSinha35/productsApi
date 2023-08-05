@@ -5,7 +5,7 @@ const path=require("path")
 app.use(cors());
 const products=require("./products.json")
 const port = process.env.PORT || 5000;
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 
 // products
@@ -27,4 +27,3 @@ app.listen(port, () => {
 
 
 //  /images/product/44f16805bafbe2643da257a2d2b0e9a3.png
-// "images": ["/images/product/33f9607c495d82d5fa00c42f2f6dd31f.jpg", "/images/product/44f16805bafbe2643da257a2d2b0e9a3.png"],
