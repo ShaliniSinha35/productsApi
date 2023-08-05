@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   const newData = products.map(item =>{
     return {
       ...item,
-      img: `${req.protocol}://${req.get('host')}${item.images}` //  full image URL
+      img: `${req.protocol}://${req.get('host')}${item.images[0]}` //  full image URL
  };
   });
   return res.status(200).json(newData);
