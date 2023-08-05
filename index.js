@@ -7,11 +7,12 @@ app.use(cors());
 const products=require("./products.json");
 const logo=require("./logo.json")
 const port = process.env.PORT || 5000;
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 
 // products
-app.use('/public/images/product', express.static(path.resolve(__dirname,'public/images/product')));
+// app.use('/public/images/product', express.static(path.resolve(__dirname,'public/images/product')));
+app.use('/static', express.static(path.join(__dirname, 'public')))
 app.get('/', (req, res) => {
   const newData = products.map(item =>{
     return {
