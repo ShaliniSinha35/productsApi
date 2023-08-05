@@ -26,19 +26,19 @@ app.get('/', (req, res) => {
 });
 
 // logo
-app.use('/public/images/logo', express.static(path.resolve(__dirname,'public/images/logo')));
-app.get('/logo', (req, res) => {
-  const newData = logo.map(item =>{
-    return {
-      ...item,
-      img: `${req.protocol}://${req.get('host')}${item.img}` //  full image URL
- };
-  });
-  return res.status(200).json(newData);
+// app.use('/public/images/logo', express.static(path.resolve(__dirname,'public/images/logo')));
+// app.get('/logo', (req, res) => {
+//   const newData = logo.map(item =>{
+//     return {
+//       ...item,
+//       img: `${req.protocol}://${req.get('host')}${item.img}` //  full image URL
+//  };
+//   });
+//   return res.status(200).json(newData);
  
 
 
-});
+// });
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
