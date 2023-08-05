@@ -1,7 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const path=require("path")
+const path=require("path");
+// import img from "./public/images/product"
 app.use(cors());
 const products=require("./products.json")
 const port = process.env.PORT || 5000;
@@ -17,8 +18,8 @@ app.get('/', (req, res) => {
       img: `${req.protocol}://${req.get('host')}${item.images[0]}` //  full image URL
  };
   });
-  // return res.status(200).json(newData);
-  return res.send(newData)
+  return res.status(200).json(newData);
+ 
 
 
 });
