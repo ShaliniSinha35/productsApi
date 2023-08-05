@@ -5,11 +5,11 @@ const path=require("path")
 app.use(cors());
 const products=require("./products.json")
 const port = process.env.PORT || 5000;
-// app.use(express.static('public'));
+app.use(express.static('public/images/product'));
 
 
 // products
-app.use('/public/images/product/', express.static(path.resolve(__dirname,'public/images/product/')));
+// app.use('/public/images/product/', express.static(path.resolve(__dirname,'public/images/product/')));
 app.get('/', (req, res) => {
   const newData = products.map(item =>{
     return {
