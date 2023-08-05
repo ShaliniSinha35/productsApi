@@ -17,7 +17,9 @@ app.get('/', (req, res) => {
       img: `${req.protocol}://${req.get('host')}${item.images[0]}` //  full image URL
  };
   });
-  return res.status(200).json(newData);
+  // return res.status(200).json(newData);
+  return res.send(newData)
+
 
 });
 
