@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const path=require("path");
-// import img from "./public/images/product"
+
 app.use(cors());
 const products=require("./products.json");
 const logo=require("./logo.json")
@@ -11,7 +11,7 @@ app.use(express.static('public'));
 
 
 // products
-app.use('/public/images/product', express.static('public/images/product'));
+app.use('/public/images/product', express.static(path.resolve(__dirname,'public/images/product')));
 app.get('/', (req, res) => {
   const newData = products.map(item =>{
     return {
@@ -45,4 +45,4 @@ app.listen(port, () => {
 });
 
 
-//  /images/product/44f16805bafbe2643da257a2d2b0e9a3.png
+
