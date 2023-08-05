@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 // products
 // app.use('/public/images/product', express.static('public/images/product'));
-app.use('/images', express.static(path.join(__dirname, 'images')));
+app.use('/images', express.static(path.resolve(__dirname, 'images/product')));
 
 app.get('/', (req, res) => {
   const newData = products.map(item =>{
