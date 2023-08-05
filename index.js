@@ -4,7 +4,8 @@ const app = express();
 const path=require("path");
 // import img from "./public/images/product"
 app.use(cors());
-const products=require("./products.json")
+const products=require("./products.json");
+const logo=require("./logo.json")
 const port = process.env.PORT || 5000;
 app.use(express.static('public'));
 
@@ -16,6 +17,21 @@ app.get('/', (req, res) => {
     return {
       ...item,
       img: `${req.protocol}://${req.get('host')}${item.images[0]}` //  full image URL
+ };
+  });
+  return res.status(200).json(newData);
+ 
+
+
+});
+
+// logo
+app.use('/public/images/logo', express.static(path.resolve(__dirname,'public/images/logo')));
+app.get('/logo', (req, res) => {
+  const newData = logo.map(item =>{
+    return {
+      ...item,
+      img: `${req.protocol}://${req.get('host')}${item.img}` //  full image URL
  };
   });
   return res.status(200).json(newData);
