@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
   const newData = products.map((item) => {
     return {
       ...item,
-      img: `${req.protocol}://${req.get("host")}${item.images[0]}`, //  full image URL
+      img: `${req.protocol}://${req.get("host")}${item.img}`, //  full image URL
     };
   });
   return res.status(200).json(newData);
@@ -43,5 +43,7 @@ app.get("/logo", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
+
+// https://products-api-pearl.vercel.app/
 
 // http://products-api-pearl.vercel.app/images/product/tomato.jpg
